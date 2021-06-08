@@ -7,9 +7,14 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
+        
         [TestMethod]
         public void TestMethod1()
         {
+            double suma;
+            double mediaEsperada; ;
+
+
             List<int> notas = new List<int>();
 
             notas.Add(0);
@@ -20,7 +25,18 @@ namespace UnitTestProject1
             notas.Add(4);
             notas.Add(8);
 
-            double mediaEsperada = 5.143;
+
+            for (int i = 0; i < notas.Count; i++)
+            {
+                suma = suma + notas[i];
+            }
+
+            mediaEsperada = mediaEsperada / notas.Count;
+
+
+
+
+            
             int susE = 3;
             int aprE = 1;
             int notE = 2;
